@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: backendtest
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    url: ${DB_URL}
+  docker:
+    compose:
+      enabled: false
+  profiles:
+    active: ${PROFILE}
